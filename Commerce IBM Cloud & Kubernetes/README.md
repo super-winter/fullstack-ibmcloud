@@ -81,4 +81,4 @@ Alternatively, you can directly download your kubeconfig files to manually confi
 
 :large_blue_circle:`kubectl run commerce-web --image=us.icr.io/<namespace>/commerce:lbcluster`
 
-![](https://github.ibm.com/gars-ibmcloud/commerce-ibmcloud2/blob/master/Commerce%20IBM%20Cloud%20&%20Kubernetes/Kube_port_forward_Commerce.gif?raw=true)
+![](https://github.com/imvieira/fullstack-ibmcloud/blob/master/Commerce%20IBM%20Cloud%20&%20Kubernetes/Kube_port_forward_Commerce.gif?raw=true)

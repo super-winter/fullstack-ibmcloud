@@ -1,0 +1,77 @@
+version: "3"
+services:
+
+#####################################################################################################################
+#
+# _____ _________   __  _____                                                   ___   _____ _                 _ 
+#|  __ \__   __\ \ / / / ____|                                                 / _ \ / ____| |               | |
+#| |__) | | |   \ V / | |     ___  _ __ ___  _ __ ___   ___ _ __ ___ _____   _| (_) | |    | | ___  _   _  __| |
+#|  ___/  | |    > <  | |    / _ \| '_ ` _ \| '_ ` _ \ / _ \ '__/ __/ _ \ \ / /\__, | |    | |/ _ \| | | |/ _` |
+#| |      | |   / . \ | |___| (_) | | | | | | | | | | |  __/ | | (_|  __/\ V /   / /| |____| | (_) | |_| | (_| |
+#|_|      |_|  /_/ \_\ \_____\___/|_| |_| |_|_| |_| |_|\___|_|  \___\___| \_/   /_/  \_____|_|\___/ \__,_|\__,_|
+#                  ______                                             ______    ______                          
+#                 |______|                                           |______|  |______|                         
+#
+#
+# Instructions:
+# 1: docker swarm init
+# 2: docker stack deploy -c docker-compose.yml commerce
+# 3: Browser http://localhost
+
+  db2:
+    image: commerce/ts-db:9.0.1.1
+    hostname: auth_db
+    privileged: true
+    environment:
+      - LICENSE=accept
+      - TZ=Toronto/Canada
+    ports:
+      - 50000:50000
+    healthcheck:
+      test: exit 0
+
+  mq:
+    image: ibmcom/mq:latest
+    hostname: auth_mq
+    environment:
+      - LICENSE=accept
+      - TZ=Toronto/Canada
+    ports:
+      - 1414:1414
+      - 9157:9157
+      - 9443:9443
+
+  webserver:
+    image: commerce/ts-web:9.0.1.1
+    deploy:
+      replicas: 5
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 500M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "80:80"
+    networks:
+      - webnet
+   
+  store:
+    image: commerce/crs-app:9.0.1.1
+    hostname: auth_store
+    environment:
+      - LICENSE=accept
+      - TZ=Toronto/Canada
+    volumes:
+      - /opt/logs/store:/opt/WebSphere/CommerceServer90/usr/servers/default/logs/container
+    ports:
+      - 8080:8080
+      - 8443:8443
+    healthcheck:
+      test: curl -f http://localhost:8080/wcs/HealthCheck.jsp
+      interval: 10s
+      timeout: 180s
+      retries: 100
+
+networks:
+  webnet:

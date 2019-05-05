@@ -29,6 +29,3 @@ IBM Commerce in Container is composed by:
 - [X] [IBM Cloud & Kubernetes](https://github.com/imvieira/fullstack-ibmcloud/tree/master/Commerce%20IBM%20Cloud%20%26%20Kubernetes)
 - [X] [IBM Cloud Continuous Delivery]https://github.com/imvieira/fullstack-ibmcloud/tree/master/Kubernetes%20Continuous%20Delivery)
 - [X] [IBM Cloud Private & Docker Swarm](https://github.com/imvieira/fullstack-ibmcloud/tree/master/Commerce%20IBM%20Cloud%20Private%20%26%20Docker%20Swarm)
-
-### GARS Community Commerce on Cloud
-- [Knowledge Transfer Commerce on Cloud](https://ibm.ent.box.com/folder/71229172025)

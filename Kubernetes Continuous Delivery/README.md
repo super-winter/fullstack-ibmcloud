@@ -7,5 +7,5 @@ Kubernetes Continuous Delivery IBM Cloud, to automate the deployment of Docker I
 
 ✅ Docker Security Scanner
 
-![](https://github.ibm.com/gars-ibmcloud/commerce-ibmcloud2/blob/master/Kubernetes%20Continuous%20Delivery/Kubernetes_Continuous_Delivery.gif?raw=true)
+![](https://github.com/imvieira/fullstack-ibmcloud/blob/master/Kubernetes%20Continuous%20Delivery/Kubernetes_Continuous_Delivery.gif?raw=true)
 

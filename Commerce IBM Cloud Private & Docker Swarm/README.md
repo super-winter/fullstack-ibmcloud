@@ -6,7 +6,7 @@ Step by Step to deploy and scale the IBM WebSphere Commerce Container into Docke
 
 #### Basic instructions:
 
-:one: Download [Commerce ICP & Swarm docker-compose.yml](https://github.ibm.com/gars-ibmcloud/commerce-ibmcloud2/tree/master/Commerce%20IBM%20Cloud%20Private%20%26%20Docker%20Swarm/docker-compose.yml)
+:one: Download [Commerce ICP & Swarm docker-compose.yml](https://github.com/imvieira/fullstack-ibmcloud/blob/master/Commerce%20IBM%20Cloud%20Private%20%26%20Docker%20Swarm/docker-compose.yml)
 
 :two: `docker swarm init`
 
@@ -57,5 +57,5 @@ Some commands to explore at this stage:
 - [X] docker stack rm (appname)                             # Tear down an application
 - [X] docker swarm leave --force      # Take down a single node swarm from the manager
 
-![](https://github.ibm.com/gars-ibmcloud/commerce-ibmcloud2/blob/master/Commerce%20IBM%20Cloud%20Private%20&%20Docker%20Swarm/Swarm_Stack_Init.gif?raw=true)
-![](https://github.ibm.com/gars-ibmcloud/commerce-ibmcloud2/blob/master/Commerce%20IBM%20Cloud%20Private%20&%20Docker%20Swarm/Commerce_Visist_Count.gif?raw=true)
+![](https://github.com/imvieira/fullstack-ibmcloud/blob/master/Commerce%20IBM%20Cloud%20Private%20&%20Docker%20Swarm/Swarm_Stack_Init.gif?raw=true)
+![](https://github.com/imvieira/fullstack-ibmcloud/blob/master/Commerce%20IBM%20Cloud%20Private%20&%20Docker%20Swarm/Commerce_Visist_Count.gif?raw=true)

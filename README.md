@@ -4,11 +4,9 @@ This release is a documentation on how to have IBM Commerce v9 on IBM Cloud and 
 
 IBM Commerce in Container is composed by:
 
-✅ IBM WebSphere Application Server v9
+✅ IBM WebSphere Application Server Liberty
 
 ✅ IBM WebSphere Commerce Enterprise v9
-
-✅ IBM HTTP Server v9
 
 ✅ IBM DB2 v11.1
 

@@ -1,4 +1,4 @@
-# :whale: :cloud: Welcome to your first IBM WebSphere Commerce v9 on IBM Cloud with Docker and Kubernetes.
+# :whale: :cloud: Welcome to your first Full-Stack on IBM Cloud with Docker and Kubernetes.
 
 This release is a documentation on how to have IBM Commerce v9 on IBM Cloud and features as Kubernetes, Docker Swarm, IBM Cloud Private and IBM Continuous Delivery for Docker Images and Kubernetes.
 
@@ -11,6 +11,8 @@ IBM Commerce in Container is composed by:
 ✅ IBM DB2 v11.1
 
 ✅ [IBM MQ v9 - Optional](https://hub.docker.com/r/ibmcom/mq/)
+ 
+ ![](https://raw.githubusercontent.com/imvieira/fullstack-ibmcloud/master/Architecture_Chart_IBM_Cloud.png)
  
 ### Steps to have your first WebSphere Commerce in Container:
 
